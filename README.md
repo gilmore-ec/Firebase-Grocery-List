@@ -2,11 +2,6 @@
 ## Purpose: A grocery list sharing app that allows multiple users to access a shared list of grocery items via a unique token.
 ## Author: Timothy Gilmore
 
-
-### App Screenshot:
-
-![App Screenshot](https://github.com/gilmore-ec/323-Grocery-List/blob/development/assets/app_screenshot.PNG?raw=true)
-
 ### Requirements:
 - #### User Experience:
    - [x] **Create a List**: Users can create a new grocery list and receive a randomly generated token. This token can be shared with others to allow them to join the list.
@@ -44,3 +39,7 @@
 
 ### References:
 ![Proposed App Wireframe](https://github.com/gilmore-ec/323-Grocery-List/blob/development/assets/Final_Project_Wireframe.PNG?raw=true)
+
+### App Screenshot:
+
+![App Screenshot](https://github.com/gilmore-ec/323-Grocery-List/blob/development/assets/app_screenshot.PNG?raw=true)
