@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/list_item">
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/user_profile_img"
+                android:layout_width="@dimen/item_profile_dimen"
+                android:layout_height="@dimen/item_profile_dimen"
+                android:contentDescription="@string/user_name"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                android:text="@string/user_name"
+                android:textAlignment="center"
+                android:textSize="@dimen/normal_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".7"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_marginVertical="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_name_qty"
+                android:text="@string/item_name_qty"
+                android:textSize="@dimen/emphasize_text"/>
+
+            <TextView
+                android:layout_marginVertical="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_buy_before"
+                android:text="@string/before_mm_dd_yyyy"
+                android:textSize="@dimen/normal_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_price"
+                android:text="@string/default_price"
+                android:textSize="@dimen/normal_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/hline"
+        style="@style/hline"
+        android:layout_marginVertical="@dimen/hline_vertical_margin"
+        android:layout_marginHorizontal="@dimen/hline_horizontal_margin"/>
+</LinearLayout>

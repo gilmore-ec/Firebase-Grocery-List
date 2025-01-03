@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NavigationFragment"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_weight=".5"
+        android:id="@+id/home_button"
+        android:text="@string/home"
+        style="@style/buttons"/>
+
+    <Button
+        android:layout_weight=".5"
+        android:id="@+id/logout_button"
+        style="@style/buttons"
+        android:text="@string/logout" />
+
+</LinearLayout>

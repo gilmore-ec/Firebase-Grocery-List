@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/activity"
+    android:baselineAligned="false"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/top_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:name="com.example.grocerylist.TopNavBar" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_weight=".9">
+        <TextView
+            android:id="@+id/title"
+            style="@style/subtitle"
+            android:text="@string/list_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/items_home"
+            style="@style/list"
+            android:layout_marginVertical="@dimen/list_vertical_margin" />
+
+        <TextView
+            android:id="@+id/list_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_0_00"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/emphasize_text"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight=".1">
+        
+        <Button
+            android:id="@+id/add_item_button"
+            android:text="@string/add_item"
+            style="@style/buttons"/>
+
+        <FrameLayout
+            android:id="@+id/navigation_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:name="com.example.grocerylist.NavigationFragment" />
+    </LinearLayout>
+
+</LinearLayout>

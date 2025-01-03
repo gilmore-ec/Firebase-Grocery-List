@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newList"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    style="@style/activity"
+    tools:context=".NewListFormActivity">
+
+    <TextView
+        style="@style/title"
+        android:text="@string/new_list_form" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/new_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/list_name"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/emphasize_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_the_name_for_your_new_list"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/save_new_list_button"
+            style="@style/buttons"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</LinearLayout>

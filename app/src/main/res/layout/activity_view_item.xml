@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewItem"
+    style="@style/activity"
+    tools:context=".ViewItemActivity">
+
+    <FrameLayout
+        android:id="@+id/top_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:name="com.example.grocerylist.TopNavBar" />
+
+    <TextView
+        android:id="@+id/view_item_name"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        style="@style/subtitle"
+        android:text="@string/item_name"
+        android:layout_weight=".175"/>
+
+    <TextView
+        android:id="@+id/view_item_date"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".175"
+        android:text="@string/buy_before_mm_dd_yyyy"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/view_item_qty"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".175"
+        android:text="@string/quantity_0"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/view_item_cost"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".175"
+        android:text="@string/total_cost_0_00"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight=".3"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/edit_item_button"
+            style="@style/buttons"
+            android:text="@string/edit" />
+        <Button
+            android:id="@+id/remove_item_button"
+            style="@style/buttons"
+            android:text="@string/remove" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+        <FrameLayout
+            android:id="@+id/navigation_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:name="com.example.grocerylist.NavigationFragment" />
+
+    </LinearLayout>
+
+</LinearLayout>

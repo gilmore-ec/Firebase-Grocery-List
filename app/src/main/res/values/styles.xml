@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="title">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/title_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">0.1</item>
+    </style>
+    <style name="subtitle">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/subtitle_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/list_background</item>
+    </style>
+    <style name="list_item">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/list_item</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginHorizontal">25dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+    </style>
+    <style name="layout_item">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="hline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+    <style name="buttons">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">2dp</item>
+        <item name="android:backgroundTint">@color/button_background_color</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="maxWidth">110dp</item>
+    </style>
+    <style name="ui_element">
+        <item name="android:layout_marginHorizontal">@dimen/activity_horizontal_margin</item>
+    </style>
+    <style name="CustomMenuItemStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">@color/button_background_color</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+</resources>

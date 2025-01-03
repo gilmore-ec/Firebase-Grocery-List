@@ -1,0 +1,21 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GroceryList" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Green.Theme.GroceryList" parent="Base.Theme.GroceryList">
+        <item name="colorPrimary">@color/primary</item>
+    </style>
+
+    <style name="Blue.Theme.GroceryList" parent="Base.Theme.GroceryList">
+        <item name="colorPrimary">@color/secondary</item>
+    </style>
+
+    <style name="Purple.Theme.GroceryList" parent="Base.Theme.GroceryList">
+        <item name="colorPrimary">@color/tertiary</item>
+    </style>
+
+    <style name="Theme.GroceryList" parent="Green.Theme.GroceryList" />
+</resources>
